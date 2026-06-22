@@ -1,6 +1,6 @@
 # Name: ROBLES, SAM DAVID KIEL G.
 # School: FEU-TECH
-# Machine Problem number - 1
+# Machine Problem number - 4.1
 
 class Rectangle:
     def __init__(self, length, width):
