@@ -1,47 +1,25 @@
-# Name: Byron Ramil B. Pedrialva
-# School: FEU-TECH
+numbers = [
+30, 7, 30, 2, 88, 44, 60, 40, 1, 53, 100, 72, 86,
+64, 40, 85, 3, 19, 63, 84, 17, 31, 95, 84, 99, 60,
+85, 74, 65, 38, 43, 80, 39, 70, 8, 21, 32, 68, 64,
+55, 88, 84, 49, 68, 70, 98, 21, 51, 3, 97
+]
 
-numbers = [63, 52, 10, 42, 32, 17, 60, 45, 47, 39,
-           71, 55, 41, 95, 70, 48, 42, 32, 13, 35]
+for i in range(len(numbers)):
+    if numbers[i] > 10:
+        numbers[i] = 666
 
+print("Name: Excelsis Valencia")
+print("School: FEU TECH")
+print("Machine Problem - 3")
+print()
 
-print("List of Numbers:")
-print(numbers)
-
-
-average = sum(numbers) / len(numbers)
-print("\nAverage:", average)
-
-
-largest = max(numbers)
-smallest = min(numbers)
-
-print("\nLargest Number:", largest)
-print("Smallest Number:", smallest)
-
-
-sorted_numbers = sorted(numbers)
-
-second_smallest = sorted_numbers[1]
-second_largest = sorted_numbers[-2]
-
-print("\nSecond Smallest Number:", second_smallest)
-print("Second Largest Number:", second_largest)
-
-
-even_count = 0
-
+print("OUTPUT IS")
 for num in numbers:
-    if num % 2 == 0:
-        even_count += 1
+    print(num, end=", ")
 
-print("\nNumber of Even Numbers:", even_count)
+equal_666 = numbers.count(666)
+not_equal_666 = len(numbers) - equal_666
 
-
-odd_count = 0
-
-for num in numbers:
-    if num % 2 != 0:
-        odd_count += 1
-
-print("Number of Odd Numbers:", odd_count)
+print("\nTotal equal values", equal_666)
+print("Total not equal values", not_equal_666)
